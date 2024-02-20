@@ -5,6 +5,7 @@
         "ms-python.python",
         "ms-toolsai.jupyter",
         "eamodio.gitlens",
-        "tal7aouy.icons"
+        "tal7aouy.icons",
+        "ms-python.pylint"
     ]
 }
