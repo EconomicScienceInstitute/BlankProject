@@ -40,7 +40,7 @@
             "type": "debugpy",
             "request": "launch",
             "module": "cProfile",
-            "args": ["-o", "profile.cprof", "${file}"]
+            "args": ["-o", "${fileBasenameNoExtension}.cprof", "${file}"]
         }
     ]
 }
