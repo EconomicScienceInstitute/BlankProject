@@ -24,15 +24,23 @@
             "cwd": "${workspaceFolder}",
         },
         {
-            "name": "Python: Test",
+            "name": "Python: Streamlit",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
-            "env": {
-                "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}"
-            },
-            "stopOnEntry": false,
-            "cwd": "${workspaceFolder}",
+            "module": "streamlit",
+            "args": [
+                 "run",
+                 "${file}",
+                 "--server.port",
+                 "8501"
+            ]
+        },
+        {
+            "name": "Python: Profile",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "cProfile",
+            "args": ["-o", "profile.cprof", "${file}"]
         }
     ]
 }
